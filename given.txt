@@ -7,7 +7,7 @@ while and for block structures and subroutines
 
 
 Procopiu Mihai-Octavian
-Tusa Ioana-Raluca
+
 
 Acuma invat cum sa folosesc python mai bine si sa ma obisnuiesc cat mai mult cu python 
 
