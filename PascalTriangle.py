@@ -1,4 +1,4 @@
-
+#Problema cu triunghiul lui Pascal cu metoda recursiva
 def pascal(row,col):
    if (col == 1):return 1
    if (row == col):return 1

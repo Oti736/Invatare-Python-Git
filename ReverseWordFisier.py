@@ -1,8 +1,7 @@
 #Exercitiul de reverse la un sir dintr-un fisier given.txt
-
+#Folosim fiisierul given.txt unde avem ceva scris si rezultatul apare in expected.txt
 input_file = "given.txt"
 output_file = "expected.txt"
-
 
 def reverse_file(input_file, output_file):
   #Citim fisierul given.txt

@@ -1,4 +1,5 @@
 #Problema cu triunghiul lui pascal alta varianta cu Combinari
+#Alta metoda pentru a face triunghiul.
 import math
 
 def factorial(n):
@@ -27,7 +28,7 @@ def triunghi_pascal_combinari(numar_randuri):
     return triunghi
 
 # Exemplu de utilizare
-N = 6
+N = 10
 rezultat = triunghi_pascal_combinari(N)
 
 # Afișarea triunghiului

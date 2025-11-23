@@ -1,4 +1,4 @@
-#Exercitiul de reverse la un sir
+#Exercitiul de reverse la un sir, scris cu ajutorul programului
 sir1 = input("Introduceti sirul: ")
 #separam sirul in cuvinte
 cuv = sir1.split()
