@@ -1,3 +1,4 @@
+#Problema cu triunghiul lui pascal alta varianta cu Combinari
 import math
 
 def factorial(n):
