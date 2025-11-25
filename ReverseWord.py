@@ -4,6 +4,7 @@ sir1 = input("Write a sentence: ")
 cuv = sir1.split()
 #we create an empty array for the words 
 rev_sir1 = []
+
 for i in cuv: 
     #slicing is done using the syntax [start:stop:step]
     #[::-1] creates a new, reversed copy of the original sequence. It does not modify the original sequence in place.

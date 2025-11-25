@@ -4,15 +4,16 @@ import math
 
 def factorial(n):
    "We calculate the factorial of a number."
-   return math.factorial(n)
+return math.factorial(n)
 
-def combinari(n, k):
+def combinations(n, k):
     " We apply the formula of (C_n^k). "
     if k < 0 or k > n:
         return 0
     if k == 0 or k == n:
         return 1
-    return factorial(n) // (factorial(k) * factorial(n - k))
+
+return factorial(n) // (factorial(k) * factorial(n - k))
 
 def pascal_triangle_comb(num_rows):
     "We generate Pascal's Triangle with Combinations "
@@ -21,10 +22,11 @@ def pascal_triangle_comb(num_rows):
         num_rows = []
         # in the n row we have n+1 elements, from k=0 to k=n
         for k in range(n + 1):
-            value = combinari(n, k)
+            value = combinations(n, k)
             num_rows.append(value)
         triangle.append(num_rows)
-    return triangle
+
+return triangle
 
 # Example 
 N = 10
