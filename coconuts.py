@@ -1,5 +1,5 @@
-#Coconut's exercise first try
-
+#Coconut's exercise first try, trying with just a letter
+#First trying to understand how to convert from a string to binary
 def bit_translator(string,char = "a"):
     b = " ".join(format(ord(char), "08b") for char in string)
     output = []
