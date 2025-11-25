@@ -1,12 +1,15 @@
-#Exercitiul de reverse la un sir
-sir1 = input("Introduceti sirul: ")
-#separam sirul in cuvinte
+#Reverse word exercise.
+sir1 = input("Write a sentence: ")
+#we separate the string in words
 cuv = sir1.split()
-#creeam un vector gol pentru fiecare cuvant 
+#we create an empty array for the words 
 rev_sir1 = []
+
 for i in cuv: 
-    rev_sir1.append(i[::-1])
+    #slicing is done using the syntax [start:stop:step]
+    #[::-1] creates a new, reversed copy of the original sequence. It does not modify the original sequence in place.
+    rev_sir1.append(i[::-1]) 
 
 sir2 = " ".join(rev_sir1)
 
-print("Sirul inversat este: ", sir2) 
+print("Reversed sentence: ", sir2) 

@@ -1,22 +1,24 @@
-#Exercitiul de reverse la un sir dintr-un fisier given.txt
-
+#Reverse word exercise from a file named given.txt
+#We use the given.txt file and the result is in expected.txt
 input_file = "given.txt"
 output_file = "expected.txt"
 
-
 def reverse_file(input_file, output_file):
-  #Citim fisierul given.txt
+  #We read the given.txt file
   with open(input_file, "r") as infile:
       content = infile.read()
+  #Split the content of the file in words
+  words = content.split()
 
-  #Reverse la ce este scris in interior
-  reverse = content[::-1]
-
-  #Scriem ce am inversat in fisierul expected.txt
+  #Reverse the words in the file
+  reversed_words = [word[::-1] for word in words] #to iterate through the list of words and reverse the characters of each one individually.
+  reversed_content =" ".join(reversed_words)
+  
+  #We write the content in expected.txt
   with open(output_file, "w") as outfile:
-      outfile.write(reverse)
+      outfile.write(reversed_content)
 
-  print(f"Fisierul '{output_file}' a fost editat!")
+print(f"The file '{output_file}' was edited!")
 
 reverse_file(input_file, output_file)
 
